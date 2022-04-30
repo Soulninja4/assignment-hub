@@ -4,18 +4,18 @@
 
 
     let ass = [
-        "Assignment 1",
+        "Lab Assignment 1",
         "Assignment 2",
         "Assignment 3"
     ]
-    let link = './PP/Document.pdf'
+    let link = "Lab Assignment 1.pdf"
 
 </script>
 <section>
     {#each ass as item}
         <CollapsibleSection headerText={ item }>
             <div>
-                <File link = { './PP/' + 'Document.pdf' } />
+                <File link = { `./PP/${item}.pdf` } />
             </div>
         </CollapsibleSection>
         
