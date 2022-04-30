@@ -23,6 +23,7 @@
   "dependencies": {
     "cors": "^2.8.5",
     "express": "^4.17.3",
+    "pspdfkit": "^2022.2.1",
     "serve": "^13.0.2",
     "sirv-cli": "^2.0.0",
     "yarn": "^1.22.18"

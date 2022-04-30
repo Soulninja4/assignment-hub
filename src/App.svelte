@@ -3,6 +3,7 @@
   import Header from "./components/Header.svelte";
   import File from "./components/File.svelte";
   import Tabs from "./shared/Tabs.svelte";
+  import DropDown from "./components/DropDown.svelte";
 
   // tabs
   let items = [
@@ -17,42 +18,53 @@
 
 <Header />
 <main>
-  <divV class = "column">
-    <p> Completed Tasks </p>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-  </divV>
-
-  <Tabs {activeItem} {items} on:tabChange={tabChange} />
-  {#if activeItem === "Computer Networking"}
-    <File />
-  {:else if activeItem === "Add New Poll"}
-    <p>new poll form goes here</p>
-  {/if}
+  <div class="row">
+    <div class="column left">
+      <p>Completed Tasks</p>
+      <p> (also not functional for now)</p>
+    </div>
+    <div class="column right">
+      <Tabs {activeItem} {items} on:tabChange={tabChange} />
+      {#if activeItem === "Computer Networking"}
+        <div class="column">
+          <File />
+        </div>
+      {:else if activeItem === "Parallel Processing"}
+        <div class="column items">
+          <DropDown />
+        </div>
+      {/if}
+    </div>
+    
 </main>
-<Footer />
 
 <style>
   main {
     width: 100%;
-    max-width: 960px;
-    margin: 40px auto;
   }
-  divV {
-    width: 200px;
-    border: 5px solid black;
+
+  .row {
+    display: flex;
   }
+
   .column {
     float: left;
-    width: 150px;
+  }
+  .items {
+    width: 70%;
+    padding-left: 15px;
+  }
+  .left {
+    width: 25%;
+    border-right: 1px solid var(--gray-light, #eee);
+    height:100vh;
+  }
+  .right {
+    width: 75%;
   }
   p {
     text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
   }
 </style>

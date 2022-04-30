@@ -23,16 +23,24 @@
       margin-bottom: 40px;
     }
     ul{
+      text-align: left;
       display: flex;
-      justify-content: center;
+      justify-content: left;
       padding: 0;
       list-style-type: none;
     }
     li{
-      margin: 0 16px;
+      margin: 16px;
       font-size: 18px;
       color: #555;
       cursor: pointer;
+      
+      padding: 8px;
+      
+    }
+    li:hover{
+      background-color: rgb(219, 215, 215);
+      border-radius: 5px;
     }
     .active{
       color: #d91b42;

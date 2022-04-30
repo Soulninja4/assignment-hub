@@ -19,7 +19,7 @@
         </div>
         <div class="column right">
             <p>Login (not functional)</p>
-            <input value = "test" placeholder="Enter Username..."/>
+            <input placeholder="Enter Username..."/>
             <input placeholder="Enter Password..."/>
         </div>
     </div>
@@ -32,7 +32,6 @@
 
     .column {
         float: left;
-        border: solid black;
         height: 150px;
     }
     .left {

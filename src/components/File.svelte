@@ -1,36 +1,25 @@
 <script>
-    export const link = "";
+    import Pspdfkit from './PdfViewerComponent.svelte';
+    export let link = "default";
 </script>
 
 <main>
-    <div>
-        
-        <object
-        data='file:///Document.pdf'
-        type="application/pdf"
-        title="pdf"
-        width="500"
-        height="678"
-      >
+    <div class="pdf">
 
-        
-        <iframe
-          src='file:///Document.pdf'
-          width="500"
-          height="678"
-          title="pdf"
-        >
-        <p>This browser does not support PDF!</p>
-        </iframe>
-      </object>
-
+      <Pspdfkit document= { link } />
     </div>
 
 </main>
-
 <style>
     div { 
         padding-left: 30px;
+        height: 50%;
+        width: 50%;
+
+    }
+    .pdf { 
+      height: 50%;
+      width: 50%;
     }
 </style>
 
