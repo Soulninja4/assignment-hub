@@ -15,7 +15,8 @@
         </div>
         <div class="column middle">
             <br /><br /><br /><br />
-            <b>MITWPU SY B.Tech Panel H</b>
+            
+            <b>SY B.Tech Panel H</b>
         </div>
         <div class="column right">
             <p>Login (not functional)</p>
@@ -53,14 +54,16 @@
         max-height: 100%;
     }
     header {
-        background: #f7f7f7;
+        background: #1e203c;
+        margin: 0px;
     }
     #left {
         float: left;
+        margin-left: 20px;
     }
     b {
         font-size: 32px;
-        color: #150d5fe5;
+        color: #ffffffe5;
         margin-left: 20px;
     }
     input {
@@ -72,5 +75,6 @@
 
     p {
         margin: 10px 15px;
+        color: white;
     }
 </style>

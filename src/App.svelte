@@ -39,7 +39,10 @@
       <p>(also not functional for now)</p>
     </div>
     <div class="column right">
-      <Tabs {activeItem} {items} on:tabChange={tabChange} />
+      
+        <Tabs {activeItem} {items} on:tabChange={tabChange} />
+      
+      
       {#if activeItem === "Parallel Processing"}
         <div class="column items">
           {#each PPass as item}
@@ -82,12 +85,19 @@
         </div>
       {/if}
     </div>
+
   </div>
 </main>
 
 <style>
   main {
     width: 100%;
+    margin: 0;
+  }
+
+  .upper{
+    background-color: white;
+    margin: 0%;
   }
 
   .row {
@@ -103,15 +113,18 @@
   }
   .left {
     width: 25%;
-    border-right: 1px solid var(--gray-light, #eee);
+   
     height: 100vh;
+    background-color: #313360;
   }
   .right {
     width: 75%;
+    background-color: #22244f;
   }
   p {
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 18px;
+    color: white;
   }
 </style>

@@ -39,5 +39,5 @@
 
 </script>
 <body>
-    <div bind:this={container} style="height: 80vh; width: 50vw;"></div>
+    <div bind:this={container} style="height: 80vh; width: 45vw;"></div>
 </body>

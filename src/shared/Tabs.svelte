@@ -32,19 +32,19 @@
     li{
       margin: 16px;
       font-size: 18px;
-      color: #555;
+      color: #ffffff;
       cursor: pointer;
       
       padding: 8px;
       
     }
     li:hover{
-      background-color: rgb(219, 215, 215);
+      background-color: #6568a6;
       border-radius: 5px;
     }
     .active{
-      color: #d91b42;
-      border-bottom: 2px solid #d91b42;
+      color: #00e0c2;
+      border-bottom: 2px solid #00e0c2;
       padding-bottom: 8px;
     }
   </style>
